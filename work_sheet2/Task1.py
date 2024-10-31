@@ -15,4 +15,3 @@ if (b**2 - 4 * a * c) > 0:
     print(f"The result for x2 is: {x2}")
 
 
-
