@@ -1,9 +1,12 @@
-length
+user_input = input().split()
 
-input_as_tuple
+length = len(user_input)
 
-contains_python
+input_as_tuple = tuple(user_input)
 
-copy_input
+contains_python = ('Python' in user_input or 'python' in user_input)
 
-same_element
+copy_input = user_input
+copy_input.reverse()
+
+same_element = (user_input[0] == input_as_tuple[0])

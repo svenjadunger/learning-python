@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39eb9771-79c4-411d-98ee-724b1a22c0d2" name="Changes" comment="task: Variables and data types">
-      <change afterPath="$PROJECT_DIR$/work_sheet2/Task6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work_sheet2/Task7.py" afterDir="false" />
+    <list default="true" id="39eb9771-79c4-411d-98ee-724b1a22c0d2" name="Changes" comment="task: String slicing 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work_sheet2/Task6.py" beforeDir="false" afterPath="$PROJECT_DIR$/work_sheet2/Task6.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +42,7 @@
     "Python.Task3.executor": "Run",
     "Python.Task4.executor": "Run",
     "Python.Task5.executor": "Run",
+    "Python.Task6.executor": "Run",
     "Python.Task7.executor": "Run",
     "Python.lists,tuples,sets.executor": "Run",
     "Python.logical_operators.executor": "Run",
@@ -177,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730380563345</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="task: String slicing 2">
+      <option name="closed" value="true" />
+      <created>1730383542323</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1730383542323</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,6 +208,7 @@
     <MESSAGE value="task: List slicing" />
     <MESSAGE value="task: Operations with tuples" />
     <MESSAGE value="task: Variables and data types" />
-    <option name="LAST_COMMIT_MESSAGE" value="task: Variables and data types" />
+    <MESSAGE value="task: String slicing 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="task: String slicing 2" />
   </component>
 </project>
