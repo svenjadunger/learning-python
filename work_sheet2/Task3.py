@@ -5,6 +5,7 @@
 # Sheet 2, Task 3
 
 
+
 fellowship = ['gandalf', 'aragorn', 'frodo', 'sam', 'merry', 'pippin', 'gimli', 'legolas', 'boromir']
 hobbits = ['frodo', 'sam', 'pippin', 'merry']
 
