@@ -1,8 +1,23 @@
-string1 = "This is a wuggie. Now there are two wuggies."
-print(string1[19])
-print(string1[0:3])
-print(string1[0] + string1[2] + string1[10] + string1[15] + string1[10] + string1[25] + string1[15], string1[2])
-print(string1[3] + string1[2] + string1[1] + string1[0])
-# print(string1[0:4][::-1])
-print(string1[::-1])
+#! /usr/bin/python3
+# -*- coding: utf-8 -*-
+# Group I
+# Matriculation numbers: [827575, 826703, 828610]
+# Sheet 2, Task 2
 
+
+string1 = "This is a wuggie. Now there are two wuggies."
+
+# "o"
+print(string1[19])
+
+# "Thi"
+print(string1[0:3])
+
+# "Tiwewre i"
+print(string1[::5])
+
+# "sihT"
+print(string1[0:4][::-1])
+
+# .seigguw owt era ereht woN .eigguw a si sihT"
+print(string1[::-1])
