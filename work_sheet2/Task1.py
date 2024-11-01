@@ -5,7 +5,6 @@ b = float(input("Whats number b? "))
 c = float(input("Whats number c? "))
 
 
-
 if (b**2 - 4 * a * c) > 0:
     x1 = round((-b - sqrt(b**2 - 4 * a * c)) / (2*a), 4)
     x2 = round((-b + sqrt(b**2 - 4 * a * c)) / (2*a), 4)

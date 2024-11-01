@@ -8,8 +8,8 @@
 fellowship = ['gandalf', 'aragorn', 'frodo', 'sam', 'merry', 'pippin', 'gimli', 'legolas', 'boromir']
 hobbits = ['frodo', 'sam', 'pippin', 'merry']
 
-print('saruman' in fellowship)
-print(fellowship[0] == 'gandalf')
+print(f"a){'saruman' in fellowship}")
+print(f"b){fellowship[0] == 'gandalf'}")
 # print(fellowship[2:7] == hobbits) true set
-print('sam' in fellowship and 'sam' in hobbits)
-print(fellowship[-3] == 'gimli' or 'gimli' in hobbits) # third hobbit
+print(f"d){'sam' in fellowship and 'sam' in hobbits}")
+print(f"e){fellowship[-3] == 'gimli' or hobbits[-3] == 'gimli'}") 
