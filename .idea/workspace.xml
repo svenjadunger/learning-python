@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39eb9771-79c4-411d-98ee-724b1a22c0d2" name="Changes" comment="task: String slicing 2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work_sheet2/Task6.py" beforeDir="false" afterPath="$PROJECT_DIR$/work_sheet2/Task6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work_sheet2/Task3.py" beforeDir="false" afterPath="$PROJECT_DIR$/work_sheet2/Task3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work_sheet2/Task5.py" beforeDir="false" afterPath="$PROJECT_DIR$/work_sheet2/Task5.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,29 +35,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Task1.executor": "Run",
-    "Python.Task2.executor": "Run",
-    "Python.Task3.executor": "Run",
-    "Python.Task4.executor": "Run",
-    "Python.Task5.executor": "Run",
-    "Python.Task6.executor": "Run",
-    "Python.Task7.executor": "Run",
-    "Python.lists,tuples,sets.executor": "Run",
-    "Python.logical_operators.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.module.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Task1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Task2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Task3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Task4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Task5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Task6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Task7.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lists,tuples,sets.executor&quot;: &quot;Run&quot;,
+    &quot;Python.logical_operators.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.module.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "Python"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Python&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/work_sheet2" />

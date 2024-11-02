@@ -11,6 +11,6 @@ hobbits = ['frodo', 'sam', 'pippin', 'merry']
 
 print(f"a){'saruman' in fellowship}")
 print(f"b){fellowship[0] == 'gandalf'}")
-# print(fellowship[2:7] == hobbits) true set
+print(f"c){set(fellowship[2:7]) <= set(hobbits)}")
 print(f"d){'sam' in fellowship and 'sam' in hobbits}")
 print(f"e){fellowship[-3] == 'gimli' or hobbits[-3] == 'gimli'}") 

@@ -14,7 +14,7 @@ var_tupl = ('Berlin', 'Hamburg', 96688)
 
 result = var_int + var_float
 
-end_of_list = var_list.pop() # slice -1
+end_of_list = var_list[-1]
 
 print(var_list)
 print(end_of_list)
