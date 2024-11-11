@@ -1,0 +1,272 @@
+"""
+
+if [CONDITION]:
+    # do this if condition evaluates to True (i.e. if condition is met)
+else:
+    # do this if condition evaluates to False
+    
+    The whole else-clause (i.e. the line with the keyword "else" and the indented line below it) is optional. It's perfectly fine to only have the if-clause. Then Python will interpret this as "do nothing if condition is not met"
+ until timestamp 34:16:
+ 
+ symbols: > greater than, >= greater than or equal to <=
+ ==: equALTIY
+ != not equal to
+ 
+ if true then go ahead and do this for me
+ 
+ x= int(input("Whats x))
+y= int(input(Whats y))
+
+elif x < y:
+    print("x is less than y")
+    
+    
+elif x == y:
+    print("x is equal to  y")
+
+
+elif: else if only if thats the case your done. suppose its false then the second question, if its false then asking the third question
+else: 
+
+if true then go ahead and do this for me
+ 
+ x= int(input("Whats x))
+y= int(input(Whats y))
+
+elif x < y:
+    print("x is less than y")
+    
+    
+else x == y:
+    print("x is equal to  y") auffang
+    
+    
+    
+if x < y or x>y:
+    print(x is not equal to y)
+else:
+    print(x is equal to y) -> gekürzt
+    
+    
+
+if x != y:
+    print(x is not equal to y)
+else:
+    print(x is equal to y) -> gekürzt
+    
+if x == y:
+    print(x is equal to y)
+else:
+    print(x is not equal to y) -> gekürzt
+    
+AND
+
+score = int(input(score:))
+if score >= 90 and score <=100:
+    print(grade:a)
+elif score >= 80 and score <=90:
+    print(grade b)
+elif score >= 70 and score <80:
+    print(grade c)
+elif score >= 60 and score <70:
+    print(grade d)
+else:
+    print(grade f)
+    
+
+ANDERES VIDEO CONDITIONALS
+
+language = "Java"
+
+if language == "Python"
+    print(language us oytho)
+elif language = "Java
+    print(language is java) if its not run a second condition and see if its java
+elif language = "Javascript ----------> selbe funktionalität wie switch cases in javascript
+    print(language is java) if its not run a second condition and see if its javascript
+else:
+    print(no match)
+    
+<switch case python hats ned: elif stattdessen
+
+
+user = admin
+logged. in = true
+
+if user == adman and logged in:   ----> or when only on of them is true
+    prinr(admin page)
+else:
+    print(bad creds)
+  
+if not logged in: ---> switched true into false (not true)
+
+
+    a = [1,2,3]
+    b = [1,2,3]
+print(a == b)  --> true
+
+
+        a = [1,2,3]
+    b = [1,2,3]
+print(id(a)) 27642848276582
+print(id(b))2532525353
+print(a is b)  --> false
+
+
+    
+
+    a = [1,2,3]
+    b = a
+
+
+print(id(a)) 27642848276582
+print(id(b))2532525353
+print(a is b)  --< true
+
+print(id(a) == id(b))
+
+
+    
+condition = None
+if condition: true
+else false
+
+condition= 10
+true
+[], "", {} false,      "test" -> true
+
+SINGLE LINE CODE:
+[VALUE if True] if [CONDITION] else [VALUE if False]
+
+So the following lines of code replaces the whole block of code below.
+
+is_child = True
+age = 10
+is_child = True if age < 18 else False
+
+vs.
+
+is_child = True
+age = 10
+if age < 18:
+    is_child = True
+else:
+    is_child = False
+
+
+RANOMM MODULE
+
+import random
+
+value = random.random()
+print(value) value between 0 and 1 zb 0.4667899000
+
+FLOAT:
+
+value = random.uniform(1,10)
+print(value) random floating point value 6.22 zwischen 1 und 10
+
+
+INT:
+value = random.randint(1,6) includes 1 and 6!
+prunt(value) between 1 and 6 included zb 1,5,3,6
+
+greetings = ["hello", "hi, hey ]
+
+value = random.choice(greeting)
+print(value + ", Vorey!")   randm zb hello vorey, hi vorey
+
+colors = ["red black green]
+results = random.choices(colors, k=10) how many times we wan to get back a vuele
+print(results) prints 10 results
+
+
+
+results = random.choices(colors, weights=[18,18,2] k=10) how many times we wan to get back a vuele
+green hat nur 2 waheschenlihkeit
+green ist weniger als rest
+
+
+
+
+deck = list(range(1, 53))
+list if vakzes between 1 and 52
+print(deck)
+
+hand = random.sample(deck, k=5)
+print(hand) kriegen 5 numbers von unserem 52 card deck, sample makes sure we never get the same numbers twice
+
+
+
+
+
+a)Ein einzelnes Element zufällig aus einer Liste auswählen möchten:
+
+import random
+meine_liste = [1, 2, 3, 4, 5]
+zufallselement = random.choice(meine_liste)  # wählt ein zufälliges Element
+
+
+a.2) Die ursprüngliche Liste direkt umordnen (die alte Reihenfolge geht verloren):
+
+random.shuffle(meine_liste)  # mischt die Liste direkt durch
+
+
+b) Eine neue, zufällig geordnete Liste erstellen (Original bleibt unverändert):
+neue_liste = random.sample(meine_liste, len(meine_liste))  # erstellt neue, gemischte Liste
+
+
+würfel = [1, 2, 3, 4, 5, 6]
+wurf = random.choice(würfel)  # simuliert einen Würfelwurf
+
+
+
+NLP COntext free grammar
+= set of rules that express the ways that tokens in the language can be grouped, ordered and classified
+
+grammar rules:
+determiner: the, a , an, this,..
+noun: cat, fat
+verb: ate, crossed
+pronoun: me i
+propernoun: maria, luigi new york
+proposition: from, to on
+conjuncion: and or
+
+nominal ->noun nominal noun
+noun phrase -> determiner nominal
+
+can use to parse text or generate text to the rules of grammar
+zb
+the fat cat ate chicken -> the terminar; fat=adjective;.. -> nominal : noun und nominmal noun (fat cat); noun phrase: the fat cat
+
+the fat cat: NP
+ate: verb
+chicken :noun
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
