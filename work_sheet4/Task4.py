@@ -10,4 +10,4 @@ value = random.randint(0,1)  #  0 oder 1
 if value == 0:
     print("Kopf")
 else:
-    print("Zahl")
+    print("Zahl") # wenn 1 gewürfelt wurde
