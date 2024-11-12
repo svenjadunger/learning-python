@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Group I
 # Matriculation numbers: [827575, 826703, 828610]
-# Sheet 4, Task 1
+# Sheet 4, Task 2
 
 contaminated_token = input("Enter a token: ")
 contaminated_token = contaminated_token.strip()
