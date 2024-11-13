@@ -12,7 +12,7 @@ options = ["scissors", "paper", "rock"]
 
 print("Let's play rock, paper, scissors!")
 
-player_b = input("Please input one of the following: " + ", ".join(options) + "\n")
+player_b = input(f"Please input one of the following: " + ", ".join(options) + "\n")
 
 # an element from the list 'options' is selected randomly
 player_a = random.choice(options)
@@ -35,3 +35,5 @@ else:
         print("You won!")
     else:
         print("You lost!")
+        
+        #cattpucchin

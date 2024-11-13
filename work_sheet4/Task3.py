@@ -12,7 +12,8 @@ T = ['the', 'cat']         # Terminals
 print("-Prüfung von Grammatikregeln-")
 print("Nicht-Terminale (N):", N)
 print("Terminale (T):", T)
-print("\nBitte geben Sie eine Regel ein, wie z.B. 'N --> cat'):")
+print("\nBitte geben Sie eine Regel ein, wie z.B. 'N --> cat or 'N --> the N'):")
+
 
 
 # Eingabe der Regelc
@@ -29,7 +30,7 @@ if rule.count('-->') == 1:
    #  Entferne Leerzeichen am Anfang und Ende " N " wird zu "N"
    left_side = left_side.strip()
    right_side = right_side.strip()
-   
+
    #  Teile die rechte Seite in Symbole bei leerzeichen zb "the N" wird zu "the","N"
    right_symbols = right_side.split()
    
