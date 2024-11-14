@@ -6,8 +6,8 @@
 
 import random
 
-value = random.randint(0,1)  #  0 oder 1
+value = random.randint(0,1)  
 if value == 0:
     print("Kopf")
 else:
-    print("Zahl") # wenn 1 gewürfelt wurde
+    print("Zahl") 
