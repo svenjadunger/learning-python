@@ -9,9 +9,10 @@ import random
 
 options = ["scissors", "paper", "rock"]
 print("Let's play rock, paper, scissors!")
-player_b = input(f"Please input one of the following: {', '.join(options)}\n")
 
 player_a = random.choice(options)
+player_b = input(f"Please input one of the following: {', '.join(options)}\n")
+
 
 if player_b not in options:
     print("Please choose one of the given options!")
