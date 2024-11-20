@@ -6,7 +6,7 @@
 
 import random
 
-value = random.randint(0,1)  
+value = random.randint(0,99)  
 if value == 0:
     print("Kopf")
 else:

@@ -5,9 +5,11 @@
 # Sheet 5, Task 5
 
 
-num = input("Enter a decimal number: ") #13 wird als string '13'
+num = input("Enter a number: ") #13 wird als string '13'
 
-if num.isdigit(): #prüft ob nur nr von 0-9 (12a=false, 13 =true)
+
+
+if num.isdigit(): #prüft ob nur nr  (12a=false, 13 =true)
     n = int(num) # aus string zahl machen
     binary = '' #leerer string f. binärzahlen 0en und 1en
     while n: #solange n nicht 0 ist.. 
