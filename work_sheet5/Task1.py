@@ -5,5 +5,8 @@
 # Sheet 5, Task 1
 
 for i in range(11):
-    if i % 2 == 0:    # wenn durch 2 teilbar
+    if i % 2 == 0:
         print(i)
+
+# for num in range(0, 11, 2):
+#     print(num)

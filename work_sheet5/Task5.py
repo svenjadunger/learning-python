@@ -18,3 +18,20 @@ if num.isdigit(): #prüft ob nur nr  (12a=false, 13 =true)
     print(binary if binary else '0') #if binary nicht leer print binary, else wenns leer ist print 0
 else:
     print("Invalid Input!")
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
