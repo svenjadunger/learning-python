@@ -4,18 +4,33 @@
 # Matriculation numbers: [827575, 826703, 828610]
 # Sheet 5, Task 3
 
-text = input("Enter a sentence ")
-words = text.split()  # teilt text bei leerzeichen
-print(words)
-word_count = 0
-total_length = 0
-for word in words:
-    # Entferne alle Satzzeichen am Anfang und Ende des Wortes
-    cleaned_word = word.strip('\',.!?:"-')
-    if cleaned_word:  # Prüft ob das Wort nach Entfernung der Satzzeichen nicht leer ist
-        word_count += 1
-        # Zählt nur alphabetische Zeichen für die Länge
-        total_length += sum(1 for c in cleaned_word if c.isalpha())
-result = (word_count, round(total_length/word_count, 2) if word_count else 0)
-print(total_length)
+def cleaning(sentence):
+    for char in ".,:;!?":
+        sentence = sentence.replace(char, " ")
+
+    words = sentence.split()
+    cleaned_sentence = ''
+
+    for word in words:
+        cleaned_word = word.strip("'\"")
+        if cleaned_word:
+            cleaned_sentence += cleaned_word + " "
+    if cleaned_sentence:
+        print(cleaned_sentence)
+        return cleaned_sentence
+    else:
+        print('Token not found')
+
+
+sentence = input('Enter a string: ')
+cleaned_sentence = cleaning(sentence)
+words_count = len(cleaned_sentence.split())
+letters_count = 0
+
+for i_elem in cleaned_sentence:
+    if i_elem.isalpha():
+        letters_count += len(i_elem)
+
+average_word_len = round(letters_count / words_count, 2)
+result = (words_count, average_word_len)
 print(result)
