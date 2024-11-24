@@ -5,23 +5,24 @@
 # Sheet 5, Task 5
 
 
-num = input("Enter a number: ") #13 wird als string '13'
+number = input('Enter a number: ')
 
-
-
-if num.isdigit(): #prüft ob nur nr  (12a=false, 13 =true)
-    n = int(num) # aus string zahl machen
-    binary = '' #leerer string f. binärzahlen 0en und 1en
-    while n: #solange n nicht 0 ist.. 
-        binary = str(n % 2) + binary #n%2 rest bei division durch 2 , rest vorne anfügen
-        n //= 2
-    print(binary if binary else '0') #if binary nicht leer print binary, else wenns leer ist print 0
+if number.isdecimal():
+    decimal_number = int(number)
+    # print(bin(decimal_number))
+    # print(f'{decimal_number:b}')
+    binary_digits = []
+    while decimal_number > 0:
+        remainder = decimal_number % 2
+        binary_digits.append(str(remainder))
+        decimal_number //= 2
+    binary_digits.reverse()
+    binary_result = ''.join(binary_digits)
+    print(binary_result)
+    # print(*binary_digits, sep="")
 else:
-    print("Invalid Input!")
-    
-    
-    
-    
+    print('Invalid Input!')
+
     
     
     
