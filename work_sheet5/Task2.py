@@ -5,21 +5,19 @@
 # Sheet 5, Task 2
 
 
-string = input("Enter a string: ")
-separator = input("Enter a separator: ")
+user_string = input('Enter a text with separators: ')
+separator = input('Enter separator: ')
 
-result = [] #leere liste
-current_part = "" #leerer string, hier buchstaben sammeln, bis trennzeichen kommt
+current_part = ''
+result = []
 
-for char in string: #geht durch jeden einzelnen buchstaben in 'Hallo,Welt', char ist 'H', dann 'a',...
-    if char == separator: #wenn trennzeichen kommt, speicher alles bisherige in result
-        result.append(current_part)  #wenn ja bei Komma, nimm alles was in currentpart ist und tue es in result
-        current_part = ""    #mach current part wieder leer für nächsten teil
+for i_elem in user_string:
+    if i_elem == separator:
+        result.append(current_part)
+        current_part = ''
     else:
-        current_part += char       #wenn nein füge buchstaben zu currentpart hinzu
-
-
+        current_part += i_elem
 result.append(current_part)
 
+print(f'The split result is: {result}')
 
-print(result)
