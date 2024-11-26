@@ -4,7 +4,7 @@
 # Matriculation numbers: [827575, 826703, 828610]
 # Sheet 6, Task 2
 
-# Primzahl = Zahl, die durch 1 und sich selbst teilbar ist
+# Primzahl = Zahl, die durch 1 und sich selbst teilbar ist; 2,3,5,7,11,13,17,19,....
 
 def is_prime(number):
     if number <= 1: #zb 1
@@ -25,8 +25,8 @@ def is_prime(number):
         # Warum? Weil mögliche Primzahlen oft in der Form 6k±1 kommen
 
     return True #zb 7
-print(is_prime(7))    # True, weil 7 nur durch 1 und sich selbst teilbar
-print(is_prime(12))   # False, weil 12 durch 2,3,4,6 teilbar
-print(is_prime(2))    # True, weil 2 die kleinste Primzahl ist
-print(is_prime(1))    # False, weil 1 per Definition keine Primzahl ist
+print(is_prime(7))    # True
+print(is_prime(12))   # False
+print(is_prime(2))    # True
+print(is_prime(1))    # False
 

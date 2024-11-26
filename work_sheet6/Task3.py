@@ -11,7 +11,7 @@ def is_palindrome(string):
     #cleaned[::-1] erstellt rückwärtsversion durch slicing: nimm ganzen string cleaned und lies ihn von hint. na. vorne
     #amanaplanacanalpanama wird zu amanaplanacanalpanama
     return cleaned == cleaned[::-1]
-#prüft ob bereinigter string cleaned gleich mit rückwärsversion cleaned[::-1] ist, wenn ja palindrom
+
 
 
 test_string_1 = "A man, a plan, a canal: Panama"
