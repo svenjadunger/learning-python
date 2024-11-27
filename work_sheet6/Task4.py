@@ -5,7 +5,7 @@
 # Sheet 6, Task 4
 
 #Anagramm = wort oder zeichenkette, die durch Umstellen der Buchstaben eines anderen wortes entsteht
-#listen und silent sind Anagramme
+#listen und silent sind Anagramm
 
 def is_anagram(string1, string2):
     cleaned1 = ''.join(char.lower() for char in string1 if char.isalnum())
@@ -22,4 +22,4 @@ print(result)  # True
 string3 = "Dormitory"
 string4 = "Dirty room"
 result2 = is_anagram(string3, string4)
-print(result)
+print(result) 
