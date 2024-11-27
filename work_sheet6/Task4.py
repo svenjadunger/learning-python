@@ -18,3 +18,8 @@ string1 = "listen"
 string2 = "silent"
 result = is_anagram(string1, string2)
 print(result)  # True
+
+string3 = "Dormitory"
+string4 = "Dirty room"
+result2 = is_anagram(string3, string4)
+print(result)

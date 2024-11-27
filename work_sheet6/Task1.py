@@ -20,6 +20,8 @@ print(flatten(test))
 test2 = [1, [2, [3, [4, [5, [6]]]]]]
 print(flatten(test2)) #[1, 2, 3, 4, 5, 6]
 
+test3 = [['ich', 'lege', 'tief'], ['ich', [['lege', 'tiefer']]], 'ich', 'lege', 'oben']
+print(flatten(test3))
 
 
 

@@ -19,3 +19,6 @@ print(result)  # 2
 
 result = common_divisor(7, 11, 13)
 print(result)  # 1
+
+result = common_divisor(12, 3, 9)
+print(result) 
