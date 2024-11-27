@@ -24,3 +24,6 @@ print("Encoded:", encoded)  #"8 5 12 12 15"
 # Test 2: Dekodierung von "8 5 12 12 15"
 decoded = encode("8 5 12 12 15", decoding=True)
 print("Decoded:", decoded)  #"hello"
+
+decoded = encode("1 2 3", decoding=True)
+print("Decoded:", decoded) 

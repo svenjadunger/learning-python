@@ -8,7 +8,7 @@
 
 def is_palindrome(string):
     cleaned = ''.join(char.lower() for char in string if char.isalnum())
-    #cleaned[::-1] erstellt rückwärtsversion durch slicing: nimm ganzen string cleaned und lies ihn von hint. na. vorne
+    #rückwärtsversion durch slicing: nimm ganzen string cleaned und lies ihn von hint. na. vorne
     #amanaplanacanalpanama wird zu amanaplanacanalpanama
     return cleaned == cleaned[::-1]
 

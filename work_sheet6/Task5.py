@@ -4,7 +4,7 @@
 # Matriculation numbers: [827575, 826703, 828610]
 # Sheet 6, Task 5
 
-#kgT berechnen von 3 Ganzzahlen
+#ggT berechnen von 3 Ganzzahlen
 
 def common_divisor(int1, int2, int3):
     for i in range(2, min(int1, int2, int3) + 1):  # Teste von 2 bis zur kleinsten Zahl(min). (1 ist immer Teiler jeder Zahl)

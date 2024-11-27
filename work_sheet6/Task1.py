@@ -14,11 +14,11 @@ def flatten(my_list):
             result.append(item) 
     return result
 
-test = [1, [2, 3], [4, [5, 6]]] #Ergebnis: [1, 2, 3, 4, 5, 6]
+test = [1, [2, 3], [4, [5, 6]]] #[1, 2, 3, 4, 5, 6]
 print(flatten(test))
 
 test2 = [1, [2, [3, [4, [5, [6]]]]]]
-print(flatten(test2)) # Ergebnis: [1, 2, 3, 4, 5, 6]
+print(flatten(test2)) #[1, 2, 3, 4, 5, 6]
 
 
 
@@ -34,7 +34,7 @@ print(flatten(test2)) # Ergebnis: [1, 2, 3, 4, 5, 6]
 #         else:
 #             result.append(item)
     
-#     return result[::-1]  # Ergebnis umdrehen
+#     return result[::-1]  
 
 
 
