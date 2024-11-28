@@ -4,8 +4,8 @@
 # Matriculation numbers: [827575, 826703, 828610]
 # Sheet 6, Task 4
 
-#Anagramm = wort oder zeichenkette, die durch Umstellen der Buchstaben eines anderen wortes entsteht
-#listen und silent sind Anagramm
+#Anagramme = wort oder zeichenkette,  die durch Umstellen der Buchstaben eines anderen wortes entsteht
+#listen und silent sind Anagramme
 
 def is_anagram(string1, string2):
     cleaned1 = ''.join(char.lower() for char in string1 if char.isalnum())
