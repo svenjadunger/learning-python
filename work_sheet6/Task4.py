@@ -4,22 +4,20 @@
 # Matriculation numbers: [827575, 826703, 828610]
 # Sheet 6, Task 4
 
-#Anagramme = wort oder zeichenkette,  die durch Umstellen der Buchstaben eines anderen wortes entsteht
-#listen und silent sind Anagramme
-
 def is_anagram(string1, string2):
-    cleaned1 = ''.join(char.lower() for char in string1 if char.isalnum())
-    cleaned2 = ''.join(char.lower() for char in string2 if char.isalnum())
-    #wenn sortierte zeichenlisten identisch sind ['a', 'a', 'e', 'e', 'g', = ['a', 'a', 'e', 'e', 'g', -> True
-    return sorted(cleaned1) == sorted(cleaned2)
+    list1 = list(string1.replace(" ", ""))  # Leerzeichen löschen, wenn das Anagramm aus zwei oder mehr Wörtern besteht
+    list2 = list(string2.replace(" ", ""))
+    for i_elem in list1:
+        if i_elem in list2:
+            list2.remove(i_elem)
+    if len(list2) == 0:
+        return True
+    else:
+        return False
 
 
-string1 = "listen"
-string2 = "silent"
-result = is_anagram(string1, string2)
-print(result)  # True
+string1 = input('Enter the first string: ')
+string2 = input('Enter the second string: ')
+print(is_anagram(string1, string2))
 
-string3 = "Dormitory"
-string4 = "Dirty room"
-result2 = is_anagram(string3, string4)
-print(result) 
+# Test: Dormitory, Dirty room

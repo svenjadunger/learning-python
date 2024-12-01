@@ -4,40 +4,21 @@
 # Matriculation numbers: [827575, 826703, 828610]
 # Sheet 6, Task 1
 
-
-def flatten(my_list): 
-    result = [] 
-    for item in my_list:
-        if isinstance(item, list):
-            result.extend(flatten(item))
-        else: 
-            result.append(item) 
+def flatten(user_list):
+    result = []
+    for i_elem in user_list:
+        if isinstance(i_elem, list):  # Method checkt, ob das Element eine Liste ist
+            nested_result = flatten(i_elem)  # Funktion für Subliste aufrufen
+            for nested_elem in nested_result:
+                result.append(nested_elem)
+        else:
+            result.append(i_elem)  # wenn es keine Liste ist, fügen einfach hinzu
     return result
 
-test = [1, [2, 3], [4, [5, 6]]] #[1, 2, 3, 4, 5, 6]
-print(flatten(test))
 
-test2 = [1, [2, [3, [4, [5, [6]]]]]]
-print(flatten(test2)) #[1, 2, 3, 4, 5, 6]
-
-test3 = [['ich', 'lege', 'tief'], ['ich', [['lege', 'tiefer']]], 'ich', 'lege', 'oben']
-print(flatten(test3))
-
-
-
-# def flatten(my_list):
-#     result = []
-#     stack = list(my_list)  
-    
-#     while stack:
-#         item = stack.pop()  
-#         if isinstance(item, list):
-#             stack.extend(item[::-1]) 
-#         else:
-#             result.append(item)
-    
-#     return result[::-1]  
-
+my_list = [['ich', 'lege', 'tief'], ['ich', [['lege', 'tiefer']]], 'ich', 'lege', 'oben']
+result = flatten(my_list)
+print(f"Flattened list: {' '.join(result)}")
 
 
 
