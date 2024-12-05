@@ -11,7 +11,7 @@ def common_divisor(int1, int2, int3):
 # +1 weil range() den Endwert nicht einschließt, damit min berücksigt wird
         if int1 % i == 0 and int2 % i == 0 and int3 % i == 0:
             return i  
-    return 1  # Wenn kein kgV existiert größer als 1 
+    return 1  
 
 
 result = common_divisor(12, 18, 24)
