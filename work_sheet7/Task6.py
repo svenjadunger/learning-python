@@ -16,3 +16,14 @@ def list_depth(lst):
         max_depth = max(max_depth, depth) #speichert die größere zahl: aktuelle max_depth od. neue depth
     
     return 1 + max_depth #return max. Untertiefe +1
+
+# Test
+test = [
+[1, [2, [3, 4], 5]],  # Tiefe 3
+[1, 2, 3],            # Tiefe 1
+[]                    # Tiefe 1
+]
+
+for t in test:
+    print(f"Input: {t}")
+    print(f"Tiefe: {list_depth(t)}\n")
