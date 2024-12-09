@@ -73,8 +73,16 @@ Randbemerkung: Sehr oft wird bei der Erklärung von Rekursion die Fibonacci-Zahl
 
 
 
-sum(4) -> ()
+sum(4) -> (1+2+3+4) -> 10
 
+
+
+def sum(n)
+    if n== 0:
+        return 0
+    else:
+        return n + sum(n-1)
+        
 
 
 
