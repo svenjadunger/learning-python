@@ -5,7 +5,7 @@
 # Sheet 6, Task 4
 
 def is_anagram(string1, string2):
-    list1 = list(string1.replace(" ", ""))  # Leerzeichen löschen, wenn das Anagramm aus zwei oder mehr Wörtern besteht
+    list1 = list(string1.replace(" ", ""))  
     list2 = list(string2.replace(" ", ""))
     for i_elem in list1:
         if i_elem in list2:

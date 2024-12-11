@@ -4,11 +4,9 @@
 # Matriculation numbers: [827575, 826703, 828610]
 # Sheet 6, Task 5
 
-#kgV berechnen von 3 Ganzzahlen
 
 def common_divisor(int1, int2, int3):
-    for i in range(2, min(int1, int2, int3) + 1):  # Teste von 2 bis zur kleinsten Zahl(min). (1 ist immer Teiler jeder Zahl)
-# +1 weil range() den Endwert nicht einschließt, damit min berücksigt wird
+    for i in range(2, min(int1, int2, int3) + 1): 
         if int1 % i == 0 and int2 % i == 0 and int3 % i == 0:
             return i  
     return 1  

@@ -7,12 +7,12 @@
 def flatten(user_list):
     result = []
     for i_elem in user_list:
-        if isinstance(i_elem, list):  # Method checkt, ob das Element eine Liste ist
-            nested_result = flatten(i_elem)  # Funktion für Subliste aufrufen
+        if isinstance(i_elem, list):  
+            nested_result = flatten(i_elem) 
             for nested_elem in nested_result:
                 result.append(nested_elem)
         else:
-            result.append(i_elem)  # wenn es keine Liste ist, fügen einfach hinzu
+            result.append(i_elem)  
     return result
 
 
