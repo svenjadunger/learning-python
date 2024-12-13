@@ -16,4 +16,4 @@ def to_left_recursive(lst):
 
 print(to_left_recursive([]))          # []
 print(to_left_recursive([1, 2, 3, 4]))  # [[[1], 2], 3], 4]
-
+print(to_left_recursive([1])) 

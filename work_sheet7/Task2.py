@@ -11,3 +11,5 @@ def node_count(tree):
 #ist es ein Nicht-blattknoten (zb S oder NP), +1 um aktuellen knoten zu zählen
 #f. jeden teilbaum(child) i.d. liste tree[1] wird funkt. node.c. rekurisv aufgerufen, ergebnisse summiert
 
+# tree ergänzen
+
