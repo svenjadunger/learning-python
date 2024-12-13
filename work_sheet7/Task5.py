@@ -4,11 +4,23 @@
 # Matriculation numbers: [827575, 826703, 828610]
 # Sheet 7, Task 5
 
-def fibonacci_recursive(n):
-    if n <= 0:  # Basisfall: n = 0
-        return 0
-    elif n == 1:  # Basisfall: n = 1
-        return 1
-    return fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2)  # Rekursive Berechnung
+# 1.Recursion
+def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
 
-print(fibonacci_recursive(10)) # 55
+
+print(fibonacci(5))
+
+
+# 2. Iteration
+def fibonacci_2(n):
+    seq = [0, 1]
+    for i in range(n):
+        seq.append(seq[-1] + seq[-2])
+    return seq[-2]
+
+
+print(fibonacci_2(5))
