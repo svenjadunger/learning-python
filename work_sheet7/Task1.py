@@ -11,7 +11,9 @@ def to_left_recursive(lst):
     if len(lst) <= 1: #entweder leer oder genau 1
         return lst #dann stoppe Rekursion
     return [to_left_recursive(lst[:-1]), lst[-1]] 
-#if not, nehme alle Elemente außer letztes
+#if not, nehme alle Elemente außer letztes lst[:-1] Aus [1, 2, 3, 4] wird [1, 2, 3]
+#lst[-1] Das ist das letzte Element der Liste. ->
+#Beispiel: Aus [1, 2, 3, 4] wird das 4.
 #funktion ruft sich selbst mit lst[:-1] auf. Der Rückgabewert wird zsm m. lst[-1] in neue liste gepackt
 
 
