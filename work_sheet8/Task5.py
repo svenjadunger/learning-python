@@ -7,6 +7,8 @@
 #ein leeres dic. wird als standardw. verw., um berechn. fibonac-werte zu speichern: memo={}
 #d. schlüssel ist num, d. zugehör. wert is ergebn. der fibonac-berechn.
 def fibonacci(num, memo={}):
+    """accepts an integer as an
+    argument and calculates the value of the sequence at that position"""
     if num in memo:  # Prüfen, ob wert bereits in dict. gespeich. ist
         return memo[num] #falls ja, gesp. wert sofort zurückgeb.
     if num == 0:  # die Fibonaccizahl an position(0) = 0 ist 0

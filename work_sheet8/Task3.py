@@ -5,6 +5,7 @@
 # Sheet 8, Task 3
 
 def map_languages(dict1, dict2):
+    """returns a dictonary mapping language1 to language3 and takes two dictonaries as arguments"""
     return {key: dict2[value] for key, value in dict1.items() if value in dict2}
 
 

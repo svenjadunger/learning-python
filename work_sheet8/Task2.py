@@ -7,6 +7,7 @@
 
 
 def letter_frequency(text):
+    """returns the frequency of letters and takes a text as argument"""
     # Entferne Leerzeichen und Satzzeichen aus d. Text
     cleaned_text = ''.join(char.lower() for char in text if char.isalpha())
 

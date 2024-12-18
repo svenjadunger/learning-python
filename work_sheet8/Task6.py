@@ -9,6 +9,7 @@
 # Sie werden häufig in der Textanalyse verwendet
 
 def extract_contexts(text, stopwords):
+    """takes a text as a string and a list of stopwords as input and returns a dictonary"""
     #teilt bei leerzeichen in liste v. wörtern
     words = text.split()
     result = {}
