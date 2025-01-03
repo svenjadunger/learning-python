@@ -14,10 +14,10 @@ def node_count(tree_tuple):
         return 0
 
     parent_node, child = tree_tuple
-    counter +=1
+    counter += 1
     for child_tree in child:
         counter += node_count(child_tree)
-
+#return counter besser
     return counter
 
 

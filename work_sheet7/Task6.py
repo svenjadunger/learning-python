@@ -8,7 +8,7 @@
 def list_depth(lst):
     depth = 1
     if not lst:
-        return 1
+        return 1 #return tiefe, so ist hardgecoded
     for i_elem in lst:
         if isinstance(i_elem, list):
             depth = max(depth, list_depth(i_elem) + 1)
