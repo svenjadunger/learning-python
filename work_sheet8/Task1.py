@@ -5,7 +5,7 @@
 # Sheet 8, Task 1
 
 def lists_to_dict(keys, values):
-    """Converts two lists into a dictonary and takes a key and a value"""
+    """Converts two lists into a dictonary"""
     #prüfe ob länge der beiden listen gleich sind
     if len(keys) != len(values):
         raise ValueError("Lists must have the same length.") #fehler werfen, wenn nicht gleich lang
