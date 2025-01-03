@@ -20,7 +20,6 @@ def letter_frequency(text):
             frequency[char] += 1 #wenn buchst. bereits im dict. ist, wird zähler um 1 erhöht
         else:
             frequency[char] = 1 #andernfalls wird buchst. m. zähler v. 1 hinzugef.
-
     return frequency
 
 

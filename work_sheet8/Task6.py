@@ -4,6 +4,7 @@
 # Matriculation numbers: [827575, 826703, 828610]
 # Sheet 8, Task 6
 
+# was sind n-grams?:
 # N-Grams sind aufeinanderfolgende Sequenzen von n Elementen aus einem Text
 # Bei n=2 (Bigrams) z.B. "I love" und "love coding" aus "I love coding"
 # Sie werden häufig in der Textanalyse verwendet
