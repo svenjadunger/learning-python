@@ -16,4 +16,4 @@ def random_line(inputfile_name):
 
 
 # test
-print(random_line('input_task6.txt'))  # Could print any line like "Justin" or "Queen"
+print(random_line('input_task6.txt'))  # zb justin
