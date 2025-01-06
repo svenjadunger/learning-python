@@ -7,7 +7,19 @@
 
 
 def letter_frequency(text):
-    """returns the frequency of letters and takes a text as argument"""
+    """
+    Calculate the frequency of each letter in the given text.
+
+    Removes spaces and punctuation before processing. The function is
+    case-insensitive, treating uppercase and lowercase letters as the same.
+
+    Args:
+        text (str): The input string to analyze.
+
+    Returns:
+        dict: A dictionary where keys are letters and values are their
+        respective frequencies.
+    """
     # Entferne Leerzeichen und Satzzeichen aus d. Text
     cleaned_text = ''.join(char.lower() for char in text if char.isalpha())
 
@@ -23,6 +35,5 @@ def letter_frequency(text):
     return frequency
 
 
-text = "Hallo Welt!"
-result = letter_frequency(text)
-print(result)  #{'h': 1, 'a': 1, 'l': 3, 'o': 1, 'w': 1, 'e': 1, 't': 1}
+result = letter_frequency("Hello, World!")
+print(result)  # {'h': 1, 'e': 1, 'l': 3, 'o': 2, 'w': 1, 'r': 1, 'd': 1}

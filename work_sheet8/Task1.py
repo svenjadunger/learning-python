@@ -19,3 +19,5 @@ keys = ["name", "age", "city"]
 values = ["Alice", 30, "Berlin"]
 result = lists_to_dict(keys, values)
 print(result)  # {'name': 'Alice', 'age': 30, 'city': 'Berlin'}
+
+
