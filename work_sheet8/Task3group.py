@@ -17,9 +17,14 @@ def map_languages(dict1, dict2):
         dict: A dictionary mapping words from language1 to language3.
 
     """
+    #dic wird erstellt
     result = {}
+    #durchöäuft dict1 wobei, key1 wort in sprache1(zb red ist)
+    #value1 wort in sprache2 zb rot
     for key1, value1 in dict1.items():  # Returns all key-value pairs, for example: [(‘red’, ‘rot’), (‘green’, ‘grün’)].
+        #prüft ob sprache2 wort in dict2 existiert
         if value1 in dict2:
+            #bei übereinstimmung schlüssel= sprache1-wort, wert:sprache3-wort
             result[key1] = dict2[value1]
     return result
     # in one line: return {key: dict2[value] for key, value in dict1.items() if value in dict2}

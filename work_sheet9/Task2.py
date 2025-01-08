@@ -4,6 +4,11 @@
 # Matriculation numbers: [827575, 826703, 828610]
 # Sheet 9, Task 2
 
+
+#nicht nur wörter sondern auch alle zeichen
+
+
+
 #erstellt funkt. mit zwei parametern: ein und ausgabedateinamen
 def find_token_frequency(inputfile_name, outputfile_name):
     """

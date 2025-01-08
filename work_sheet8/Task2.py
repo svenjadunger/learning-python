@@ -20,10 +20,9 @@ def letter_frequency(text):
         dict: A dictionary where keys are letters and values are their
         respective frequencies.
     """
-    # Entferne Leerzeichen und Satzzeichen aus d. Text
+
     cleaned_text = ''.join(char.lower() for char in text if char.isalpha())
 
-    # create empty dictory for buchstabenhäufigkeit
     frequency = {}
 
     # Zähle die Buchstaben in cleaded text

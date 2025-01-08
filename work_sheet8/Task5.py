@@ -7,8 +7,23 @@
 #ein leeres dic. wird als standardw. verw., um berechn. fibonac-werte zu speichern: memo={}
 #d. schlüssel ist num, d. zugehör. wert is ergebn. der fibonac-berechn.
 def fibonacci(num, memo={}):
-    """accepts an integer as an
-    argument and calculates the value of the sequence at that position"""
+    """
+    Computes the nth Fibonacci number using memoization to optimize performance.
+
+    The function calculates the nth Fibonacci number using recursion. It stores
+    previously computed values in a dictionary to avoid redundant calculations.
+
+    Args:
+        num (int): The index of the Fibonacci sequence to compute.
+        memo (dict, optional): A dictionary used to store previously computed Fibonacci values.
+
+    Returns:
+        int: The nth Fibonacci number.
+
+    Example:
+        >>> fibonacci(10)
+        55
+    """
     if num in memo:  # Prüfen, ob wert bereits in dict. gespeich. ist
         return memo[num] #falls ja, gesp. wert sofort zurückgeb.
     if num == 0:  # die Fibonaccizahl an position(0) = 0 ist 0
