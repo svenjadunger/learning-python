@@ -3,8 +3,8 @@
 # Group I
 # Matriculation numbers: [827575, 826703, 828610]
 # Sheet 9, Task 1
-
-def mad_libs(word1, word2, word3, word4=None):
+#wor4=none ist ein optionaler parameter, wenn er nicht angegeben wird, ist sein wert none
+def mad_libs(word1: str, word2: str, word3: str, word4 : str =None):
     """
     Fills a Mad Libs style text with given words.
     Args:
@@ -15,9 +15,10 @@ def mad_libs(word1, word2, word3, word4=None):
     Returns:
         str: The completed text
     """
+    #prüft ob word4 einen wert hat, also nicht none ist
     if word4:
         text = f"I saw an {word1} that {word2} very {word3} and {word4}."
-    else:
+    else: #wenn word4=none
         text = f"I saw an {word1} that {word2} very {word3}."
     return text
 
