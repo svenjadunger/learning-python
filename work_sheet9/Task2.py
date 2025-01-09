@@ -7,47 +7,79 @@
 
 #nicht nur wörter sondern auch alle zeichen
 
-
-
 #erstellt funkt. mit zwei parametern: ein und ausgabedateinamen
 def find_token_frequency(inputfile_name, outputfile_name):
     """
     Count token frequencies in input file and write results to output file.
-    
     Args:
-        inputfile_name (str): Name of input text file
-        outputfile_name (str): Name of output file for frequencies
+    inputfile_name (str): Name of input text file
+    outputfile_name (str): Name of output file for frequencies
     """
     # leeres dict. f. speichern von worthäufigkeiten
     # jedes wort wird schlüssel, die häufigkeit sein wert
     frequencies = {}
     
+    # Satzzeichen die als eigene Tokens zählen sollen
+    satzzeichen = ".,!?;:-~@#$%^&*()"
+
     # öffnet eingabedatei zum lesen mit r
     # liest den gesamten text
     # teilt text in einzelne wörter (tokens)
     with open(inputfile_name, 'r') as infile:
         text = infile.read()
-        tokens = text.split()
+        words = text.split()
         
         # geht durch jedes wort, wenn wort schon im dic ist: erhöhe zähler um 1
         # wenn nicht: füge es neu mit zähler 1 hinzu
-        for token in tokens:
-            if token in frequencies:
-                frequencies[token] += 1
-            else:
-                frequencies[token] = 1
-    
+        for word in words:
+            current_token = ""
+            
+            # Prüfe jedes Zeichen im Wort
+            for char in word:
+                if char in satzzeichen:
+                    # Speichere aktuellen Token falls vorhanden
+                    if current_token:
+                        if current_token in frequencies:
+                            frequencies[current_token] += 1
+                        else:
+                            frequencies[current_token] = 1
+                        current_token = ""
+                    
+                    # Speichere Satzzeichen als Token
+                    if char in frequencies:
+                        frequencies[char] += 1
+                    else:
+                        frequencies[char] = 1
+                else:
+                    current_token += char
+            
+            # Speichere letzten Token des Wortes
+            if current_token:
+                if current_token in frequencies:
+                    frequencies[current_token] += 1
+                else:
+                    frequencies[current_token] = 1
+
     # ergebnsise schreiben
     # öffnet ausgabedatei zum schreiben mit w
     # geht durch die wörter in ursprüngl. reihenfolge
     # schreibt wort und häufigkeit in neue zeile
     # entfernt mit pop geschriebene wörter aus dict. (verhindert duplikate)
     with open(outputfile_name, 'w') as outfile:
-        for token in tokens:
-            if token in frequencies:
-                outfile.write(f"{token} {frequencies[token]}\n")
-                frequencies.pop(token)  # Avoid duplicates
-    
+        for token in words:
+            current = ""
+            for char in token:
+                if char in satzzeichen:
+                    if current in frequencies:
+                        outfile.write(f"{current} {frequencies.pop(current)}\n")
+                    if char in frequencies:
+                        outfile.write(f"{char} {frequencies.pop(char)}\n")
+                    current = ""
+                else:
+                    current += char
+            if current in frequencies:
+                outfile.write(f"{current} {frequencies.pop(current)}\n")
+
     return "Successfully created file."
 
 # Test
