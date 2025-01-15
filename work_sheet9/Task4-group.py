@@ -9,15 +9,12 @@ def join_names(inputfile_name: str, outputfile_name: str):
     Returns:
         None
     """
-    #beide dateien werden gleichzeitig geöffnet
-    #zum lesen und schreiben
-    #schleife liest immer die zwei zeilen, firstn, lastn, 
-    #strip entfernt leerzeichen und zeilenumbrüche
+
     with open(inputfile_name, 'r') as inputfile, open(outputfile_name, 'w') as outfile:
         while True:
             first_name = inputfile.readline().strip()
             last_name = inputfile.readline().strip()
-#prüfen auf dateiende
+
             if not first_name or not last_name:  # If the end of the file is reached, exit the loop.
                 break
 
