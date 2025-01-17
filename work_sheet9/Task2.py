@@ -3,7 +3,8 @@
 # Group I
 # Matriculation numbers: [827575, 826703, 828610]
 # Sheet 9, Task 2
-
+#pathlib
+#
 
 #nicht nur wörter sondern auch alle zeichen
 
@@ -30,37 +31,37 @@ def find_token_frequency(inputfile_name, outputfile_name):
         words = text.split()
         
 #geht durch jedes wort, current_token ist temporärer string zum aufbauen des aktuellen tokens
-        for word in words:
-            current_token = ""
-            
-            #geht durch jeden buchstaben im wort, prüft ob es satzzeichen ist
-            for char in word:
-                if char in satzzeichen:
-                    # wenn vor satzzeichen ein token gebaut wurde: prüft ob es schon im dic. ist, wenn ja: erhöhe zähler um 1, 
-                    #wenn nein: fügt es neu mit zähler 1 hinzu
-                    #leert den temporären token
-                    if current_token:
-                        if current_token in frequencies:
-                            frequencies[current_token] += 1
-                        else:
-                            frequencies[current_token] = 1
-                        current_token = ""
-                    
-                    # Speichert das satzzeuchen selbst als token: wenn schon vorh: erhöht zähler, wenn neu: fügt es m. zähler 1 hinzu
-                    if char in frequencies:
-                        frequencies[char] += 1
+    for word in words:
+        current_token = ""
+        
+        #geht durch jeden buchstaben im wort, prüft ob es satzzeichen ist
+        for char in word:
+            if char in satzzeichen:
+                # wenn vor satzzeichen ein token gebaut wurde: prüft ob es schon im dic. ist, wenn ja: erhöhe zähler um 1, 
+                #wenn nein: fügt es neu mit zähler 1 hinzu
+                #leert den temporären token
+                if current_token:
+                    if current_token in frequencies:
+                        frequencies[current_token] += 1
                     else:
-                        frequencies[char] = 1
-                        #wenn kein satzzeichen: fügt buchstaben zum aktuellen token hinzu
+                        frequencies[current_token] = 1
+                    current_token = ""
+                
+                # Speichert das satzzeuchen selbst als token: wenn schon vorh: erhöht zähler, wenn neu: fügt es m. zähler 1 hinzu
+                if char in frequencies:
+                    frequencies[char] += 1
                 else:
-                    current_token += char
-            
-            # am ende des wortes: speichert den letzten token falls vorhanden
-            if current_token:
-                if current_token in frequencies:
-                    frequencies[current_token] += 1
-                else:
-                    frequencies[current_token] = 1
+                    frequencies[char] = 1
+                    #wenn kein satzzeichen: fügt buchstaben zum aktuellen token hinzu
+            else:
+                current_token += char
+        
+        # am ende des wortes: speichert den letzten token falls vorhanden
+        if current_token:
+            if current_token in frequencies:
+                frequencies[current_token] += 1
+            else:
+                frequencies[current_token] = 1
 
     # ergebnsise schreiben
     # öffnet ausgabedatei zum schreiben mit w

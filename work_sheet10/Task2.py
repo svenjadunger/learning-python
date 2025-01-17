@@ -20,12 +20,12 @@ def to_pig_latin(word):
     # ^ bedeutet am anfang des wortes
     # aeiou sind die vokabelliste
     # wort + way -> eat + way = eatway
-    if re.match(r'^[aeiou]', word):
+    if re.match(r'^[aeiouAEIOU]', word):
         return word + 'way'
     
     # re.search() findet ersten vokal 'a'
     # start() gibt die position 2 zurück, weil in start vokal a an postiion 2 ist
-    vowel_pos = re.search(r'[aeiou]', word).start()
+    vowel_pos = re.search(r'[aeiouAEIOU]', word).start()
     #  word[vowel_pos:] = art, von posiion 2 bis ende
     # word[:vowel_pos] : st von anfang bis position 2
     # ay am ende

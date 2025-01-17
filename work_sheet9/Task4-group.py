@@ -1,4 +1,6 @@
-def join_names(inputfile_name: str, outputfile_name: str):
+from pathlib import Path
+
+def join_names(inputfile_name: str | Path , outputfile_name: str):
     """
     Combines first and last names from an input file and writes them to an output file.
 
@@ -9,7 +11,8 @@ def join_names(inputfile_name: str, outputfile_name: str):
     Returns:
         None
     """
-
+    if isinstance(inputfile_name, str): inputfile_name = Path(inputfile_name)
+    assert isinstance(inputfile_name, Path) and inputfile_name.is_file()
     with open(inputfile_name, 'r') as inputfile, open(outputfile_name, 'w') as outfile:
         while True:
             first_name = inputfile.readline().strip()

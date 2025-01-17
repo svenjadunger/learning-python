@@ -29,7 +29,7 @@ def parse_file(inputfile_name):
             print(f"Line {idx} was ignored due to missing information.")
             continue
 #konvertiert die werte in richtige datentypen
-#fängt fehler bei ungültigen zahlen ab
+        # fängt fehler bei ungültigen zahlen ab
         try:
             country = parts[0]
             population = float(parts[1])
